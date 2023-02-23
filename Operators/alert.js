@@ -28,3 +28,8 @@ true + false	// 1
 null + 1		// 1	숫자형으로 변환시 null은 0
 undefined + 1	// NaN	숫자형으로 변환시 undefined는 NaN
 " \t \n" - 2	// -2	문자열을 숫자형으로 변환시 공백은 삭제, 길이가 0인 문자열은 0
+
+let l = prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1);
+let r = prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2);
+
+alert(+l + +r); // a문자열을 숫자형으로 변환
